@@ -168,5 +168,8 @@ footer a:hover {
         font-size: 28px;
         text-align: center;
     }
+    main {
+        height: 70vh;  
+    }
 
 }
