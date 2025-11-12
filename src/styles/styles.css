@@ -42,11 +42,89 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-top: 1%;
+    justify-content: flex-start;
     text-align: center;
     flex-direction: column;
 }
 
+/*Counter and control styles*/
+.counter {
+    padding: 30px;
+    padding-bottom: 60px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 4px var(--text-primary-color);
+    border-radius: 30px;
+    background-color: var(--background-timer-color);
+}
+.counter .timer  {
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+
+}
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+.controls button {
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.controls button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/*Change mode buttons*/
+.buttons {
+    padding-top: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: var(--background-color);
+    transition: all 0.3s ease;
+}
+.buttons .workBtn {
+    background-color: var(--accent-workmode-color);
+}
+
+.buttons .breakBtn {
+    background-color: var(--accent-breakmode-color);
+}
+.buttons button:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+.buttons .breakBtn:hover {
+    color: var(--accent-breakmode-color);
+    border: solid 2px var(--accent-breakmode-color);
+}
+
+.buttons .workBtn:hover {
+    color: var(--accent-workmode-color);
+    border: solid 2px var(--accent-workmode-color);
+}
 
 /*Footer styles*/
 footer {
@@ -67,4 +145,28 @@ footer a {
 footer a:hover {
     transform: scale(1.05);
     filter: brightness(1.5);
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1200px) {
+    .counter {
+        width: 70%;
+    }
+    .counter .timer {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .counter {
+        width: 80%;
+    }
+    .counter .timer {
+        font-size: 6rem;
+    }
+    header h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
 }
