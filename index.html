@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--SEO-->
+
+    <title>ZenFocus Timer - Online Free Pomodoro Timer</title>
+
     <meta name="author" content="Oriol Plazas" />
     <meta
       name="description"
@@ -11,32 +13,64 @@
     />
     <meta
       name="keywords"
-      content="Pomodoro, Timer, Productivity, Focus, Work Sessions, ZenFocus Timer"
+      content="Pomodoro, Timer, Productivity, Focus, Work Sessions, Study Timer, ZenFocus Timer, Free Online Tool"
     />
 
-    <!--Title and Styles and JS links-->
-    <title>ZenFocus Timer - Pomodoro Timer</title>
+    <meta property="og:title" content="ZenFocus Timer - Boost Your Focus" />
+    <meta
+      property="og:description"
+      content="ZenFocus Timer is a simple and effective Pomodoro timer designed to help you boost your productivity and maintain focus during work sessions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="[YOUR WEBSITE URL HERE]" />
+    <meta
+      property="og:image"
+      content="https://support.apple.com/guide/preview/take-a-picture-of-your-screen-prvw1092/mac"
+    />
+    <meta property="og:site_name" content="ZenFocus Timer" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZenFocus Timer - Boost Your Focus" />
+    <meta
+      name="twitter:description"
+      content="ZenFocus Timer is a simple and effective Pomodoro timer designed to help you boost your productivity and maintain focus during work sessions."
+    />
+    <meta
+      name="twitter:image"
+      content="https://support.apple.com/guide/preview/take-a-picture-of-your-screen-prvw1092/mac"
+    />
+
     <link rel="stylesheet" href="src/styles/styles.css" />
+
+    <link rel="icon" type="image/x-icon" href="src/assets/logoBackground.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="src/assets/logoBackground.png"
-    />
-    <script src="src/scripts/scripts.js"></script>
   </head>
 
   <body>
     <header>
-      <h1>POMODORO TIMER</h1>
+      <h1 id="title">POMODORO TIMER</h1>
     </header>
     <main>
+      <svg
+        id="darkMode"
+        xmlns="http://www.w3.org/2000/svg"
+        width="42"
+        height="42"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="icon icon-tabler icons-tabler-filled icon-tabler-moon"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
+        />
+      </svg>
       <div class="counter" id="counter">
         <div class="timer" id="timer">
           <span id="minutes">25</span><span class="separator">:</span
@@ -45,6 +79,7 @@
         <div class="controls">
           <button id="startBtn">
             <svg
+              id="svgStartBtn"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               fill="#2A9D8F"
@@ -92,5 +127,6 @@
         >@oriioll</a
       >
     </footer>
+    <script src="src/scripts/scripts.js"></script>
   </body>
 </html>

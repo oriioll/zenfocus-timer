@@ -7,6 +7,13 @@
     --text-primary-color: #264653;
     --text-principal-font: 'Montserrat', sans-serif;
     --text-secondary-font: 'Roboto', sans-serif;
+    /*Dark Mode*/
+    --background-color-dark: #121212;
+    --background-timer-color-dark: #1F1F1F;
+    --text-primary-color-dark: #E0E0E0;
+    --accent-workmode-color-dark: #4ECDC4;
+    --accent-breakmode-color-dark: #FFD700;
+
 }
 
 * {
@@ -47,6 +54,16 @@ main {
     flex-direction: column;
 }
 
+#darkMode {
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
 /*Counter and control styles*/
 .counter {
     padding: 30px;
@@ -79,7 +96,7 @@ main {
     background-color: transparent;
     transition: all 0.3s ease;
 }
-.controls button:hover {
+.controls button:hover, #darkMode:hover {
     cursor: pointer;
     transform: scale(1.1);
     filter: brightness(1.2);
@@ -172,4 +189,20 @@ footer a:hover {
         height: 70vh;  
     }
 
+}
+
+@media (max-width: 550px) {
+    #darkMode {
+        top: 15px;
+        right: 15px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #darkMode {
+        top: 90vh;
+        right: 50px;
+    }
 }
