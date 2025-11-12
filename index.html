@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenFocus Timer - Pomodoro  Timer</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--SEO-->
+    <meta name="author" content="Oriol Plazas" />
+    <meta
+      name="description"
+      content="ZenFocus Timer is a simple and effective Pomodoro timer designed to help you boost your productivity and maintain focus during work sessions."
+    />
+    <meta
+      name="keywords"
+      content="Pomodoro, Timer, Productivity, Focus, Work Sessions, ZenFocus Timer"
+    />
+
+    <!--Title and Styles and JS links-->
+    <title>ZenFocus Timer - Pomodoro Timer</title>
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/assets/logoBackground.png"
+    />
+    <script src="src/scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <h1>POMODORO TIMER</h1>
+    </header> 
+    <main>
+        <div class="counter" id="counter">
+            <div class="timer" id="timer">25:00</div>
+            <div class="controls">
+                <button id="startBtn">Start</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="workBtn" class="workBtn">WORK</button>
+            <button id="breakBtn" class="breakBtn">BREAK</button>
+        </div>
+    </main>
+    <footer>
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/oriioll">@oriioll</a>
+    </footer>
+  </body>
 </html>
