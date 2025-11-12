@@ -164,6 +164,59 @@ footer a:hover {
     filter: brightness(1.5);
 }
 
+/*ANIMATIONS - Fade in on page load*/
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animations to elements */
+header {
+    animation: fadeInDown 0.4s ease-out;
+}
+
+#darkMode {
+    animation: fadeIn 0.5s ease-out 0.15s both;
+}
+
+.counter {
+    animation: fadeInUp 0.45s ease-out 0.2s both;
+}
+
+.buttons {
+    animation: fadeInUp 0.45s ease-out 0.35s both;
+}
+
+footer {
+    animation: fadeInUp 0.4s ease-out 0.5s both;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 1200px) {
     .counter {
@@ -201,8 +254,7 @@ footer a:hover {
 }
 
 @media (max-width: 400px) {
-    #darkMode {
-        top: 90vh;
-        right: 50px;
+    header h1 {
+        font-size: 20px;
     }
 }
